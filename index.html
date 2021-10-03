@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="./Assets/css/style.css">
+    <title>Tempo Finder</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Open Container -->
+        <div class="header">
+            <header class="hero">
+                <h1 class="app-title">Tempo Finder</h1>
+                <h2>What's your tempo?</h2>
+                <form class="search-bar">
+                    <label for="tempo-search"></label>
+
+                    <input type="text" class="search-value" name="tempo-search" id="search-value"
+                        placeholder="Enter number 40-220" required>
+                    <button type="button" class="submitBtn btn-style" id="search-button">Submit</button>
+
+                </form>
+                <div class="weather-container weather-box">
+                    <p id="weatherTitle" class="uk-card-title">Weather Information<span id="weatherTitle2"></span></p>
+                        <p id="temp"></p>
+                        <p id="wind"></p>
+                        <p  id="humidity"></p>
+                        <p>UV Index: <span id="currentUV" class ="uVBox">N/D</span></p>
+                </div>
+
+            </header>
+
+        </div> <!-- Close header section -->
+
+    
+
+    <aside class=""></aside>
+    <main class="wallpaper"></main>
+</div> <!-- Close Container -->
+
+ <!-- Open modal section -->
+    <section id="popup">
+        <section id="contentBox">
+            <section id="close"></section>
+            <section id="imgBox">
+                <img src="https://static4.depositphotos.com/1020091/366/v/950/depositphotos_3662269-stock-illustration-musical-notes.jpg">
+            </section>
+            <section id="content1">
+                <div>
+                    <h3 id="welcome">WELCOME TO TEMPO FINDER!!!</h3>
+                    <p>Find your rhythm with Tempo Finder.</p>
+                    <p>Input a number between 40 and 220, choose a tune and enjoy your workout!</p>
+                    <a href="#" id="getStarted">Get Started</a>
+                </div>
+            </section>
+        </section>
+    </section> 
+    <!-- End of modal -->
+
+<footer class="footer">
+    <ul>
+        <li class="credit">API by: getsongbpm</li>
+        <li class="made">
+            <h4>Made with love❤️</h4>
+        </li>
+        <li class="copy" clearfix>Group 1 &copy
+            <span id="year" data-date="YYYY"></span> 
+        </li>
+    </ul>
+</footer> 
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/dayjs"></script> <!-- Gigi -->
+    <script src="./Assets/js/script.js"></script>
+</body>
+</html>
+
